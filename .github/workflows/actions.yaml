@@ -11,5 +11,6 @@ jobs:
               uses: actions/hello-world-javascript-action@v1.1
               with:
                 who-to-greet: Jax Teller
+                run: echo "time=$(date)" >> $GITHUB_OUTPUT
             - name: Log Greeting Time
-              run: echo"${{steps.greet.outputs.time }}"
+              run: echo "${{steps.greet.outputs.time }}"
