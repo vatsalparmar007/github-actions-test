@@ -12,4 +12,4 @@ jobs:
               with:
                 who-to-greet: Jax Teller
             - name: Log Greeting Time
-              run: echo"${{steps.greet.outputs.time}}"
+              run: echo"${{steps.greet.outputs.time }}"
